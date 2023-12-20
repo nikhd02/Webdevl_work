@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First name: <br>
+    <input type="text" id="firstname" value="2">
+
+    Last name: <br>
+    <input type="text" id="secondname" value="3">
+
+    <br><br>
+    <input type="submit" onclick="myFunction(4,3)">
+    <p id="demo"></p>
+    <script>
+        function myFunction(p1,p2){
+
+            //const num1=parseInt(prompt("Enter the first number: "));
+            
+            let num1=parseInt(prompt("Enter the first number: "));
+            
+            //const num2=parseInt(prompt("Enter the first number: "));
+
+            let num2=parseInt(prompt("Enter the second number: "));
+
+            let sum = num1 +num2;
+            document.getElementById("demo").innerHTML = sum;
+        }
+    </script>
+</body>
+</html>
