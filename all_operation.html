@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--First name: <br>
+    <input type="text" id="firstname" value="2">
+
+    Last name: <br>
+    <input type="text" id="secondname" value="3"> -->
+    Add two number:<br>
+    <input type="submit" onclick="add(4,3)">
+    <p id="add"></p>
+    <br>
+    Subtract two number:<br>
+    <input type="submit" onclick="sub(4,3)">
+    <p id="sub"></p>
+    <br>
+    Multiply two number:<br>
+    <input type="submit" onclick="mul(4,3)">
+    <p id="mul"></p>
+    <br>
+    Divide two number:<br>
+    <input type="submit" onclick="div(4,3)">
+    <p id="div"></p>
+    <script>
+        function add(p1,p2){
+
+            //const num1=parseInt(prompt("Enter the first number: "));
+            
+            let num1=parseInt(prompt("Enter the first number: "));
+            
+            //const num2=parseInt(prompt("Enter the first number: "));
+
+            let num2=parseInt(prompt("Enter the second number: "));
+
+            let sum = num1 +num2;
+            document.getElementById("add").innerHTML = sum;
+        }
+
+        function sub(p1,p2){
+
+            //const num1=parseInt(prompt("Enter the first number: "));
+            
+            let num1=parseInt(prompt("Enter the first number: "));
+            
+            //const num2=parseInt(prompt("Enter the first number: "));
+
+            let num2=parseInt(prompt("Enter the second number: "));
+
+            let sub = num1-num2;
+            document.getElementById("sub").innerHTML = sub;
+        }
+
+        function mul(p1,p2){
+
+            //const num1=parseInt(prompt("Enter the first number: "));
+            
+            let num1=parseInt(prompt("Enter the first number: "));
+            
+            //const num2=parseInt(prompt("Enter the first number: "));
+
+            let num2=parseInt(prompt("Enter the second number: "));
+
+            let mul = num1*num2;
+            document.getElementById("mul").innerHTML = mul;
+        }
+
+        function div(p1,p2){
+
+            //const num1=parseInt(prompt("Enter the first number: "));
+            
+            let num1=parseInt(prompt("Enter the first number: "));
+            
+            //const num2=parseInt(prompt("Enter the first number: "));
+
+            let num2=parseInt(prompt("Enter the second number: "));
+
+            let div = num1/num2;
+            document.getElementById("divz").innerHTML = div;
+        }
+    </script>
+</body>
+</html>
